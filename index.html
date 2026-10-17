@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Ucuzzubul Android 0.1.0 uygulamasının veri kullanımı, saklama ve silme işlemlerini açıklayan gizlilik politikası.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Ucuzzubul Gizlilik Politikası</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #202e29; background: #f5f7f5; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-size: 17px; line-height: 1.7; }
+    main { max-width: 820px; margin: 0 auto; padding: 44px 30px 60px; }
+    .review-status { margin: 0 0 24px; color: #694800; font-size: .9rem; font-weight: 650; }
+    article { background: #fff; border: 1px solid #dce4de; border-radius: 14px; padding: 40px; }
+    .brand { margin: 0 0 8px; color: #23603e; font-size: .9rem; font-weight: 700; letter-spacing: .06em; }
+    h1 { margin: 0 0 12px; color: #14271c; font-size: clamp(2rem, 6vw, 2.65rem); line-height: 1.16; letter-spacing: -.035em; }
+    h2 { margin: 36px 0 12px; color: #14271c; font-size: 1.28rem; line-height: 1.35; }
+    p { margin: 0 0 16px; }
+    .meta { color: #53645a; font-size: .91rem; }
+    .intro { margin-top: 26px; }
+    ul { padding-left: 1.3em; margin: 0 0 20px; }
+    li { margin: 8px 0; }
+    a { color: #176439; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    a:hover { color: #103d24; }
+    a:focus-visible { outline: 3px solid #176439; outline-offset: 4px; border-radius: 2px; }
+    .contact { margin-top: 36px; padding-top: 22px; border-top: 1px solid #dce4de; }
+    .contact h2 { margin-top: 0; }
+    .contact p:last-child { margin-bottom: 0; }
+    @media (max-width: 600px) { body { font-size: 16px; } main { padding: 24px 16px 36px; } article { padding: 28px 22px; border-radius: 10px; } h2 { margin-top: 30px; } }
+    @media print { :root { background: #fff; color: #000; } main { max-width: none; padding: 0; } article { border: 0; border-radius: 0; padding: 0; } h2 { break-after: avoid; } p, li { orphans: 3; widows: 3; } }
+  </style>
+</head>
+<body>
+  <main>
+    <article aria-labelledby="policy-title">
+      <header>
+        <p class="brand">UCUZZUBUL</p>
+        <h1 id="policy-title">Gizlilik politikası</h1>
+        <p class="meta">Kapsam: Ucuzzubul Android 0.1.0<br>Metin tarihi: <time datetime="2026-10-17">17 Ekim 2026</time></p>
+      </header>
+
+      <p class="intro">Bu politika, Ucuzzubul Android 0.1.0 uygulamasını kullanırken hangi verilerin işlendiğini, nerede saklandığını ve nasıl silinebileceğini açıklar. iOS uygulamasını kapsamaz.</p>
+      <p>Ucuzzubul, mağazalardaki ürünleri karşılaştırmanıza ve kaydettiğiniz ürünlerin fiyatını takip etmenize yardımcı olur. Kullanıcı hesabı açmanızı istemez; uygulama içinde ödeme veya sipariş işlemez.</p>
+
+      <section aria-labelledby="network-title">
+        <h2 id="network-title">Mağazalara gönderilen veriler</h2>
+        <p>Arama yaptığınızda arama sözcükleri doğrudan seçtiğiniz mağazalara iletilir. Ürün görselleri ilgili mağazaların görsel sunucularından veya içerik dağıtım hizmetlerinden yüklenir ve cihazda önbelleğe alınabilir.</p>
+        <p>Fiyat takibini açtığınızda kaydettiğiniz ürünün kimliği veya ürün başlığından üretilen sorgu, fiyat kontrolü için o ürünün mağazasına gönderilir. Arama için mağaza seçimini değiştirmek, kayıtlı favorilerin fiyat takibini kapatmaz.</p>
+        <p>Ağ isteğini alan hizmet IP adresinizi ve standart bağlantı ve istemci bilgilerini görebilir. Ucuzzubul konum izni istemez. Bu, üçüncü tarafların IP adresinden konum çıkaramayacağı anlamına gelmez.</p>
+        <p>Mağaza bağlantısını açtığınızda o mağazanın ve kullandığınız tarayıcının kendi veri ve çerez koşulları geçerlidir. Mağazaların ve diğer üçüncü taraf hizmetlerin kendi sistemlerinde hangi verileri ne kadar süre sakladığını Ucuzzubul belirlemez.</p>
+      </section>
+
+      <section aria-labelledby="webview-title">
+        <h2 id="webview-title">Migros araması ve geçici tarayıcı verileri</h2>
+        <p>Migros aramasında mağazanın web içeriği, Android WebView kullanılarak uygulama sürecine özel ayrı bir profile yüklenir. Mağaza ve sayfanın yüklediği alt kaynaklar standart tarayıcı istekleri alabilir; sayfa bu profilde kendi çerez ve site verilerini oluşturabilir. Normal tarayıcınızın oturumu içe aktarılmaz.</p>
+        <p>İş bitince, iptal edilince veya uygulama arka plana geçince görünüm kapatılır; bu profilin çerezlerinin, ağ önbelleğinin ve JavaScript site verilerinin silinmesi istenir. Silme tamamlanmadan yeni Migros araması yapılmaz.</p>
+        <p>Boş profil uygulama süreci sonuna kadar bellekte kalabilir. Önceki süreçten kalan uygulamaya ait profiller, sonraki WebView başlangıcında silinir. Süreç beklenmedik şekilde sonlanırsa temizlik sonraki başlangıca kalabilir. Bu temizlik, üçüncü taraf sunucularındaki kayıtları silmez.</p>
+      </section>
+
+      <section aria-labelledby="local-title">
+        <h2 id="local-title">Cihazda saklanan veriler</h2>
+        <p>Aşağıdaki bilgiler, uygulamanın bu cihazdaki özel depolama alanında tutulur:</p>
+        <ul>
+          <li>Favorileriniz ve belirlediğiniz hedef fiyatlar</li>
+          <li>Her ürün için son 100 fiyat gözlemi</li>
+          <li>Son 20 aramanız</li>
+          <li>Mağaza seçimi ve diğer uygulama tercihleriniz</li>
+        </ul>
+        <p>Bir favoriyi kaldırdığınızda ilgili fiyat geçmişi de silinir. Arama geçmişini arama kutusundaki geçmiş listesinden temizleyebilirsiniz. Fiyat takibini kapatabilirsiniz.</p>
+      </section>
+
+      <section aria-labelledby="diagnostics-title">
+        <h2 id="diagnostics-title">Yerel tanı kayıtları</h2>
+        <p>Sorunları incelemek için arama sözcüğü veya takip sorgusu, mağaza, sonuç durumu, ürün sayıları, süreler, HTTP durum kodu, uygulama sürümü ve Android API sürümü yerel tanı kayıtlarında tutulur. Her olayın rastgele bir kimliği vardır; bu kimlik kalıcı kullanıcı veya reklam kimliği değildir. Tanı kayıtları sayfa gövdesi, çerez veya erişim tokenı içermez.</p>
+        <p>En fazla 500 kayıt saklanır. Yedi günden eski kayıtlar uygulama açıldığında, yeni kayıt eklenirken, rapor dışa aktarılırken veya gönderim kontrolünde temizlenir. Uygulama kapalıyken kayıtların tam yedinci gün silineceği garanti edilmez.</p>
+        <p>Bu sürümde Ucuzzubul rapor sunucusu bağlı değildir. Tanı kayıtları otomatik olarak geliştiriciye gönderilmez.</p>
+      </section>
+
+      <section aria-labelledby="export-title">
+        <h2 id="export-title">Rapor dışa aktarma ve kayıtları silme</h2>
+        <p>Bilgi ve kayıtlar ekranından tanı kayıtlarını silebilir veya kendi seçtiğiniz dosya konumuna JSON raporu kaydedebilirsiniz. Rapor, arama sözcüklerini de içerir.</p>
+        <p>Seçtiğiniz dosya sağlayıcısı bir bulut hizmeti olabilir. Böyle bir konum seçerseniz rapor o hizmete kaydedilebilir. Dışa aktardığınız dosyaların saklanması ve silinmesi seçtiğiniz hizmetin koşullarına bağlıdır; bu kopyaları ayrıca silmeniz gerekir.</p>
+        <p>Arama geçmişini temizlemek tanı kayıtlarını silmez. Arama geçmişi ve tanı kayıtları ayrı kontrollerden silinir.</p>
+      </section>
+
+      <section aria-labelledby="notifications-title">
+        <h2 id="notifications-title">Fiyat takibi ve bildirimler</h2>
+        <p>Hedef fiyat bildirimleri cihazda oluşturulur. Bildirimlere izin verirseniz ürün adı ve fiyat bildirimde, cihaz ayarlarınıza göre kilit ekranında da görünebilir. Bildirimleri cihaz ayarlarından kapatabilirsiniz.</p>
+        <p>Fiyat takibi yaklaşık altı saatlik aralıklarla planlanır; Android ve bağlantı koşulları zamanlamayı etkileyebilir.</p>
+        <p>Migros fiyatları yalnızca uygulama öndeyken elle yenilenir. Arka planda Migros isteği yapılmaz; son fiyat ve gözlem zamanı korunur. Bölgesel stok durumu bilinmeyen Migros fiyatları hedef fiyat bildirimi oluşturmaz.</p>
+      </section>
+
+      <section aria-labelledby="security-title">
+        <h2 id="security-title">Güvenlik ve tüm yerel verilerin kaldırılması</h2>
+        <p>Mağaza bağlantıları HTTPS kullanır. Yerel kayıtlar Android’in uygulamaya özel depolama alanındadır; uygulama düzeyinde ek veritabanı şifrelemesi uygulanmaz.</p>
+        <p>Uygulamanın özel verileri, Android bulut yedeği ve Android cihazdan cihaza aktarım kurallarından dışlanır. Hesaplar arası veya Android ve iOS arasında veri eşitleme hizmeti yoktur.</p>
+        <p>Uygulamayı kaldırmak ya da Android ayarlarından uygulama verilerini temizlemek yerel kayıtları kaldırır. Önceden dışa aktardığınız dosyalar ve üçüncü taraf sunucularındaki kayıtlar bundan etkilenmez.</p>
+      </section>
+
+      <section aria-labelledby="changes-title">
+        <h2 id="changes-title">Reklam, analiz ve politika değişiklikleri</h2>
+        <p>Ucuzzubul Android 0.1.0 uygulamasına reklam veya analiz SDK’sı eklenmemiştir. Mağazaların web içerikleri ve alt kaynakları kendi veri ve çerez işlemlerini yapabilir; bu metin tüm üçüncü taraf web takibinin engellendiği yönünde bir güvence vermez.</p>
+        <p>Daha sonra sunucu paylaşımı, sponsorlu içerik veya başka bir veri akışı eklenirse bu politika ve gerekli kullanıcı açıklamaları güncellenir.</p>
+      </section>
+
+      <section class="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Uygulama ve iletişim</h2>
+        <p>Uygulama: Ucuzzubul</p>
+        <p>Gizlilik sorularınız ve destek için: <a href="mailto:ucuzzubul@gmail.com">ucuzzubul@gmail.com</a></p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
